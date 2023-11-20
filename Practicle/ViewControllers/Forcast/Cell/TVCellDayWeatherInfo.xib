@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="268" id="KGk-i7-Jjw" customClass="TVCellDayWeatherInfo" customModule="Practicle" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="268"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="422" height="268"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sRD-z3-ksf">
+                        <rect key="frame" x="5" y="5" width="412" height="143"/>
+                        <color key="backgroundColor" name="BGThemeInvert"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flH-0I-j03">
+                        <rect key="frame" x="5" y="5" width="412" height="143"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-weather-logo" translatesAutoresizingMaskIntoConstraints="NO" id="rL0-65-beI">
+                                <rect key="frame" x="10" y="42" width="70" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="6eJ-HP-uVI"/>
+                                    <constraint firstAttribute="width" secondItem="rL0-65-beI" secondAttribute="height" multiplier="1:1" id="u5z-vX-ST4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023-11-16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1Q-Ya-Jwp">
+                                <rect key="frame" x="10" y="10" width="392" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" name="BGThemeInvert"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyt-1Y-CHa">
+                                <rect key="frame" x="90" y="42" width="312" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" name="BGThemeInvert"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aff-uS-KTr">
+                                <rect key="frame" x="90" y="74" width="312" height="59"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dya-rV-ovg">
+                                        <rect key="frame" x="0.0" y="0.0" width="151" height="59"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2Ud-eJ-R2r">
+                                                <rect key="frame" x="5" y="5" width="141" height="49"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lowest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDu-SK-fm0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="141" height="22"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                                        <color key="textColor" name="BGThemeInvert"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySz-yu-pqV">
+                                                        <rect key="frame" x="0.0" y="27" width="141" height="22"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                                        <color key="textColor" name="BGThemeInvert"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="BGTheme"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="2Ud-eJ-R2r" secondAttribute="bottom" constant="5" id="3S0-WT-2Pm"/>
+                                            <constraint firstAttribute="trailing" secondItem="2Ud-eJ-R2r" secondAttribute="trailing" constant="5" id="RWX-8i-EZg"/>
+                                            <constraint firstItem="2Ud-eJ-R2r" firstAttribute="leading" secondItem="dya-rV-ovg" secondAttribute="leading" constant="5" id="j32-FK-VXc"/>
+                                            <constraint firstItem="2Ud-eJ-R2r" firstAttribute="top" secondItem="dya-rV-ovg" secondAttribute="top" constant="5" id="tCb-Rs-fhG"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ry8-gm-tcL">
+                                        <rect key="frame" x="161" y="0.0" width="151" height="59"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hhD-he-kbz">
+                                                <rect key="frame" x="5" y="5" width="141" height="49"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Highest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSH-SE-4qo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="141" height="22"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                                        <color key="textColor" name="BGThemeInvert"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyz-Zw-BTG">
+                                                        <rect key="frame" x="0.0" y="27" width="141" height="22"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                                        <color key="textColor" name="BGThemeInvert"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="BGTheme"/>
+                                        <constraints>
+                                            <constraint firstItem="hhD-he-kbz" firstAttribute="leading" secondItem="ry8-gm-tcL" secondAttribute="leading" constant="5" id="88a-kv-Umc"/>
+                                            <constraint firstItem="hhD-he-kbz" firstAttribute="top" secondItem="ry8-gm-tcL" secondAttribute="top" constant="5" id="Gtv-5t-jFP"/>
+                                            <constraint firstAttribute="bottom" secondItem="hhD-he-kbz" secondAttribute="bottom" constant="5" id="YuC-R9-Jkk"/>
+                                            <constraint firstAttribute="trailing" secondItem="hhD-he-kbz" secondAttribute="trailing" constant="5" id="tjG-af-aXe"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25400000810000001" green="0.28000000120000001" blue="0.3700000048" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="aff-uS-KTr" secondAttribute="bottom" constant="10" id="0AD-kR-HPp"/>
+                            <constraint firstItem="rL0-65-beI" firstAttribute="leading" secondItem="i1Q-Ya-Jwp" secondAttribute="leading" id="Ani-Jz-V3v"/>
+                            <constraint firstItem="aff-uS-KTr" firstAttribute="leading" secondItem="Kyt-1Y-CHa" secondAttribute="leading" id="JDP-13-iy2"/>
+                            <constraint firstItem="aff-uS-KTr" firstAttribute="top" secondItem="Kyt-1Y-CHa" secondAttribute="bottom" constant="10" id="Onq-Hw-NRL"/>
+                            <constraint firstItem="aff-uS-KTr" firstAttribute="trailing" secondItem="Kyt-1Y-CHa" secondAttribute="trailing" id="Rz8-1g-oJ6"/>
+                            <constraint firstItem="i1Q-Ya-Jwp" firstAttribute="leading" secondItem="flH-0I-j03" secondAttribute="leading" constant="10" id="TAk-gI-slQ"/>
+                            <constraint firstItem="i1Q-Ya-Jwp" firstAttribute="top" secondItem="flH-0I-j03" secondAttribute="top" constant="10" id="YgH-JG-wXA"/>
+                            <constraint firstAttribute="trailing" secondItem="i1Q-Ya-Jwp" secondAttribute="trailing" constant="10" id="b70-Gu-ztZ"/>
+                            <constraint firstItem="Kyt-1Y-CHa" firstAttribute="leading" secondItem="rL0-65-beI" secondAttribute="trailing" constant="10" id="ki1-uH-xPR"/>
+                            <constraint firstItem="rL0-65-beI" firstAttribute="top" secondItem="i1Q-Ya-Jwp" secondAttribute="bottom" constant="10" id="nn9-XW-crM"/>
+                            <constraint firstItem="Kyt-1Y-CHa" firstAttribute="top" secondItem="rL0-65-beI" secondAttribute="top" id="oId-Fd-3NX"/>
+                            <constraint firstAttribute="trailing" secondItem="Kyt-1Y-CHa" secondAttribute="trailing" constant="10" id="uIG-xZ-hA4"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="flH-0I-j03" secondAttribute="trailing" constant="5" id="178-sN-ASO"/>
+                    <constraint firstItem="sRD-z3-ksf" firstAttribute="top" secondItem="flH-0I-j03" secondAttribute="top" id="5Px-Py-0FY"/>
+                    <constraint firstItem="sRD-z3-ksf" firstAttribute="bottom" secondItem="flH-0I-j03" secondAttribute="bottom" id="6nW-YF-7nC"/>
+                    <constraint firstItem="sRD-z3-ksf" firstAttribute="trailing" secondItem="flH-0I-j03" secondAttribute="trailing" id="h5B-CO-6s8"/>
+                    <constraint firstItem="sRD-z3-ksf" firstAttribute="leading" secondItem="flH-0I-j03" secondAttribute="leading" id="h6K-Xk-8CN"/>
+                    <constraint firstItem="flH-0I-j03" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="mgK-YM-5E9"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="flH-0I-j03" secondAttribute="bottom" constant="5" id="qU3-HE-A7J"/>
+                    <constraint firstItem="flH-0I-j03" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="s2M-7G-grG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imageWeatherIcon" destination="rL0-65-beI" id="kkZ-Ff-ZZx"/>
+                <outlet property="labelCurrentDate" destination="i1Q-Ya-Jwp" id="ux1-75-Qsi"/>
+                <outlet property="labelTemperatureHigh" destination="zyz-Zw-BTG" id="EkZ-f6-cGS"/>
+                <outlet property="labelTemperatureLow" destination="ySz-yu-pqV" id="T0w-a9-lMb"/>
+                <outlet property="labelTitleTemperature" destination="Kyt-1Y-CHa" id="z8z-sv-bOt"/>
+                <outlet property="labelTitleTemperatureHigh" destination="hSH-SE-4qo" id="DTe-lp-hlp"/>
+                <outlet property="labelTitleTemperatureLow" destination="qDu-SK-fm0" id="Mwe-px-oqS"/>
+                <outlet property="viewTemperatureHigh" destination="ry8-gm-tcL" id="cHF-YR-wfU"/>
+                <outlet property="viewTemperatureLow" destination="dya-rV-ovg" id="fdc-IX-YaK"/>
+            </connections>
+            <point key="canvasLocation" x="100.76335877862596" y="98.591549295774655"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-weather-logo" width="267" height="188"/>
+        <namedColor name="BGTheme">
+            <color red="0.9660000205039978" green="0.99299997091293335" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="BGThemeInvert">
+            <color red="0.25400000810623169" green="0.2800000011920929" blue="0.37000000476837158" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
